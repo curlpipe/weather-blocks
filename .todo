@@ -1,9 +1,8 @@
-
-- [ ] Set up git repository
-- [ ] Create Wireframes
-- [ ] Set up skeleton code
-    - [ ] Components: Forecast, ForecastList, NewForecastForm, Controls, ForecastView, App
-- [ ] Set up basic routing (view trackers, create new tracker)
+- [X] Set up git repository
+- [X] Create Wireframes
+- [X] Set up skeleton code
+    - [X] Components: Forecast, Forecasts, NewForecastForm, Controls, Dashboard, App
+- [X] Set up basic routing (view trackers, create new tracker)
 - [ ] Set up style sheets (try tailwind)
 - [ ] Set up redux slice to store and fetch weather data: (forecasts)
         => ADD EXAMPLE FORECAST TO INITIAL STATE
