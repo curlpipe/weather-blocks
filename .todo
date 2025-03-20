@@ -1,0 +1,16 @@
+
+- [ ] Set up git repository
+- [ ] Create Wireframes
+- [ ] Set up skeleton code
+    - [ ] Components: Forecast, ForecastList, NewForecastForm, Controls, ForecastView, App
+- [ ] Set up basic routing (view trackers, create new tracker)
+- [ ] Set up style sheets (try tailwind)
+- [ ] Set up redux slice to store and fetch weather data: (forecasts)
+        => ADD EXAMPLE FORECAST TO INITIAL STATE
+- [ ] Write tests for redux store
+- [ ] Show forecast data in react
+- [ ] Write jest tests for forecast components
+- [ ] Write jest tests for creating a new forecast
+- [ ] Improve accessibility
+- [ ] Add to curlpipe readme
+- [ ] Add to portfolio
