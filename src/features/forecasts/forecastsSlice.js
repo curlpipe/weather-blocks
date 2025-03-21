@@ -3,8 +3,16 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 const initialState = {
   forecasts: [
     {
-      latitude: 0,
-      longitude: 0,
+      latitude: 51.441225,
+      longitude: -0.121155,
+      temperature: 0,
+      precipitation: 0,
+      weatherCode: 0,
+      windSpeed: 0,
+    },
+    {
+      latitude: 20.968008,
+      longitude: 15.176482,
       temperature: 0,
       precipitation: 0,
       weatherCode: 0,
@@ -34,6 +42,17 @@ export const loadForecasts = createAsyncThunk(
 const forecastsSlice = createSlice({
   name: "forecasts",
   initialState,
+  reducers: {
+    newForecast: (state, action) => {
+      state.forecasts.push({
+        ...action.payload,
+        temperature: 0,
+        precipitation: 0,
+        weatherCode: 0,
+        windSpeed: 0,
+      });
+    },
+  },
   extraReducers: (builder) => {
     builder
       .addCase(loadForecasts.pending, (state, action) => {
@@ -60,4 +79,5 @@ const forecastsSlice = createSlice({
   },
 });
 
+export const { newForecast } = forecastsSlice.actions;
 export default forecastsSlice.reducer;

@@ -5,8 +5,9 @@
 - [X] Set up basic routing (view trackers, create new tracker)
 - [X] Set up style sheets (try tailwind)
 - [X] Set up redux slice to store and fetch weather data: (forecasts)
-- [ ] Show forecast data in react
-- [ ] Allow adding forecasts
+- [X] Show forecast data in react
+- [X] Allow adding forecasts
+- [ ] Delete forecasts
 - [ ] Write tests for redux store
 - [ ] Write jest tests for forecast components
 - [ ] Write jest tests for creating a new forecast
