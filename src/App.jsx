@@ -12,7 +12,7 @@ import "./App.css";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Root />}>
-      <Route path="forecasts" element={<Forecasts />}/>
+      <Route path="forecasts" element={<Forecasts />} />
       <Route path="forecasts/new" element={<NewForecastForm />} />
     </Route>
   )
