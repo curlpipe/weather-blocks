@@ -7,7 +7,7 @@
 - [X] Set up redux slice to store and fetch weather data: (forecasts)
 - [X] Show forecast data in react
 - [X] Allow adding forecasts
-- [ ] Delete forecasts
+- [X] Delete forecasts
 - [ ] Write tests for redux store
 - [ ] Write jest tests for forecast components
 - [ ] Write jest tests for creating a new forecast
