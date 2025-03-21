@@ -7,7 +7,6 @@ import Forecast from "./Forecast";
 function Forecasts() {
   const dispatch = useDispatch();
   const forecasts = useSelector((state) => state.forecasts.forecasts);
-  console.log(forecasts);
 
   useEffect(() => {
     dispatch(loadForecasts());

@@ -52,6 +52,19 @@ const forecastsSlice = createSlice({
         windSpeed: 0,
       });
     },
+    deleteForecast: (state, action) => {
+      const { latitude, longitude } = action.payload;
+      for (let i = 0; i < state.forecasts.length; i++) {
+        const thisForecast = state.forecasts[i];
+        const isMatch =
+          thisForecast.latitude === latitude &&
+          thisForecast.longitude === longitude;
+        if (isMatch) {
+          state.forecasts.splice(i, 1);
+          break;
+        }
+      }
+    },
   },
   extraReducers: (builder) => {
     builder
@@ -79,5 +92,5 @@ const forecastsSlice = createSlice({
   },
 });
 
-export const { newForecast } = forecastsSlice.actions;
+export const { newForecast, deleteForecast } = forecastsSlice.actions;
 export default forecastsSlice.reducer;
