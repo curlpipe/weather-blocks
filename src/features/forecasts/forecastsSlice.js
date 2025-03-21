@@ -27,7 +27,6 @@ export const loadForecasts = createAsyncThunk(
       )
     );
     const jsons = await Promise.all(responses.map((resp) => resp.json()));
-    console.log(jsons);
     return jsons;
   }
 );
@@ -47,7 +46,6 @@ const forecastsSlice = createSlice({
       })
       .addCase(loadForecasts.fulfilled, (state, action) => {
         // Update the state
-        console.log("hee hee");
         for (let i = 0; i < state.forecasts.length; i++) {
           const forecast = state.forecasts[i];
           const response = action.payload[i];

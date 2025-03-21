@@ -4,10 +4,10 @@
     - [X] Components: Forecast, Forecasts, NewForecastForm, Controls, Dashboard, App
 - [X] Set up basic routing (view trackers, create new tracker)
 - [X] Set up style sheets (try tailwind)
-- [ ] Set up redux slice to store and fetch weather data: (forecasts)
-        => ADD EXAMPLE FORECAST TO INITIAL STATE
-- [ ] Write tests for redux store
+- [X] Set up redux slice to store and fetch weather data: (forecasts)
 - [ ] Show forecast data in react
+- [ ] Allow adding forecasts
+- [ ] Write tests for redux store
 - [ ] Write jest tests for forecast components
 - [ ] Write jest tests for creating a new forecast
 - [ ] Improve accessibility
