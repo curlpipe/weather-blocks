@@ -35,6 +35,7 @@ function NewForecastForm() {
           type="text"
           name="latitude"
           id="latitude"
+          data-testid="latitude"
           className="p-2 rounded-xl border-2"
           value={latitude}
           onChange={(e) => setLatitude(e.target.value)}
@@ -47,6 +48,7 @@ function NewForecastForm() {
           type="text"
           name="longitude"
           id="longitude"
+          data-testid="longitude"
           className="p-2 rounded-xl border-2"
           value={longitude}
           onChange={(e) => setLongitude(e.target.value)}

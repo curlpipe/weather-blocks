@@ -81,10 +81,12 @@ const forecastsSlice = createSlice({
         for (let i = 0; i < state.forecasts.length; i++) {
           const forecast = state.forecasts[i];
           const response = action.payload[i];
-          forecast.temperature = response.current.temperature_2m;
-          forecast.windSpeed = response.current.wind_speed_10m;
-          forecast.precipitation = response.current.precipitation_probability;
-          forecast.weatherCode = response.current.weather_code;
+          try {
+            forecast.temperature = response.current.temperature_2m;
+            forecast.windSpeed = response.current.wind_speed_10m;
+            forecast.precipitation = response.current.precipitation_probability;
+            forecast.weatherCode = response.current.weather_code;
+          } catch {}
         }
         state.loadingForecasts = false;
         state.errorLoadingForecasts = false;

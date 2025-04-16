@@ -21,7 +21,7 @@ function Forecast({
   };
 
   return (
-    <div className="flex flex-col my-6 p-6 border-2 rounded-3xl">
+    <div className="flex flex-col my-6 p-6 border-2 rounded-3xl" data-testid="forecast">
       <h2 className="text-2xl mx-auto">{location}</h2>
       <p className="text-5xl py-2 my-auto mx-auto">
         {getWeatherIcon(weatherCode)}
@@ -33,6 +33,7 @@ function Forecast({
       </div>
       <p
         className="text-center text-red-400 hover:text-red-500"
+        data-testid="delete-button"
         onClick={() => handleDelete(location)}
       >
         <span className="font-bold">X</span> Delete
