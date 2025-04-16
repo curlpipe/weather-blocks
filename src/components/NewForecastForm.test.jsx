@@ -13,10 +13,10 @@ it("Creates a new forecast correctly", async () => {
   // Create test router
   const router = createMemoryRouter(
     [
-        {
-            path: "/forecasts",
-            element: <Dashboard />,
-          },
+      {
+        path: "/forecasts",
+        element: <Dashboard />,
+      },
       {
         path: "/forecasts/new",
         element: <NewForecastForm />,
@@ -42,7 +42,7 @@ it("Creates a new forecast correctly", async () => {
   const longitude = screen.getByTestId("longitude");
   await userEvent.type(latitude, "41.763982");
   await userEvent.type(longitude, "-2.649332");
-  
+
   // Submit the form
   const submitButton = screen.getByRole("button");
   await userEvent.click(submitButton);
@@ -51,5 +51,4 @@ it("Creates a new forecast correctly", async () => {
   const lastForecast = screen.getAllByTestId("forecast").at(-1);
   const lastForecastHeading = within(lastForecast).getByRole("heading");
   expect(lastForecastHeading).toHaveTextContent("41.763982, -2.649332");
-  
 });
